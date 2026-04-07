@@ -73,7 +73,7 @@ fun FeedScreen() {
 
     LaunchedEffect(Unit) {
         delay(2000)
-        uiState = FeedUiState.Error("Failed to load feed")
+        uiState = FeedUiState.Success(fakePosts)
         // Try this later to test error state:
         // uiState = FeedUiState.Error("Failed to load feed")
     }
